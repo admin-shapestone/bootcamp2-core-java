@@ -1,4 +1,4 @@
-package iterative.Loops;
+package com.shapestone.basicprogrames;
 
 class PrintEvenNumUpto100
 {

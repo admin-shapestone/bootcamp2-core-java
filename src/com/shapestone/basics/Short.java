@@ -1,4 +1,6 @@
-class Main {
+package com.shapestone.basics;
+
+class Short {
   public static void main(String[] args) {
     	
     short temperature;

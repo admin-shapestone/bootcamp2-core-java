@@ -1,3 +1,5 @@
+package com.shapestone.basics;
+
 
 class Main{
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package com.shapestone.basics.itrativestatements;
+package com.shapestone.itrativestatements;
 
 public class WhileLoopExample {
 

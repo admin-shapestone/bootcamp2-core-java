@@ -1,6 +1,6 @@
-package com.shapestone.datatypes;
+package com.shapestone.flowcontrols;
 
-public class BooleanPrimitiveExample {
+public class DoWhilePractice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

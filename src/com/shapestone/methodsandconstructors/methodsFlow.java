@@ -1,6 +1,6 @@
 package com.shapestone.methodsandconstructors;
 
-public class Methods {
+public class methodsFlow {
     int number;
     public void A1() {
     	A2();
@@ -20,7 +20,7 @@ public class Methods {
 	
 
 	public static void main(String[] args) {
-	Methods m1=new Methods();
+	methodsFlow m1=new methodsFlow();
 	m1.A1();   
 	A4();
 	}

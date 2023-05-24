@@ -5,7 +5,7 @@ public class InstanceMethods {
 	{   
 		
 	InstanceMethods obj = new InstanceMethods();   
-	System.out.println("The sum is: "+obj.mul(12, 13)); 
+	System.out.println("The sum is: "+obj.mul(12, 13)); //calling the instance method
 	
 	}  
 	

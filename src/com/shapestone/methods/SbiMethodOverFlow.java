@@ -1,6 +1,6 @@
 package com.shapestone.methods;
 
-public class SbiOverFlow {
+public class SbiMethodOverFlow {
 
 	void m1() {
 		m2();
@@ -23,7 +23,7 @@ public class SbiOverFlow {
     	System.out.println("please come tomorrow");
     }
 	public static void main(String[] args) {
-		SbiMethodFlow obj = new SbiMethodFlow();+
+		SbiMethodOverFlow obj = new SbiMethodOverFlow();
 		obj.m1();
 		m5();
 	}

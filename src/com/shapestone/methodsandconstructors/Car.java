@@ -17,7 +17,14 @@ public class Car {
 			System.out.println("car price is " +carprice );
 			System.out.println("car model is " + carmodel );
 		}
+		/*public static void main(String[] args) {
+			Car t=new Car("red",500000,"balano");
+			t.getCarDetails();*/
+		
+		
+		
 }
+
 		
 			
 		

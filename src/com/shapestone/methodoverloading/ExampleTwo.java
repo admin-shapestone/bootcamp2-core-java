@@ -2,9 +2,9 @@ package com.shapestone.methodoverloading;
 
 public class ExampleTwo {
 
-	double m1(int a) {
+	double m1(int a, int b) {
 		System.out.println("int,int arguments method");
-		return a;
+		return 20.5;
 	}
 
 	int m1(float f) {
@@ -14,8 +14,8 @@ public class ExampleTwo {
 
 	public static void main(String[] args) {
 		ExampleTwo ex = new ExampleTwo();
-		 System.out.println(ex.m1(10));
-		 
+		double d = ex.m1(10, 20);
+		System.out.println("return type=" + d);
 		int x = ex.m1(10.5f);
 		System.out.println("return type=" + x);
 	}

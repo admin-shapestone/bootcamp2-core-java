@@ -3,10 +3,11 @@ package com.shapestone.oops;
 public class AbstractionImplementing extends Abstraction
 {
 
-	public static void main(String[] args) {
-		
-
+	public AbstractionImplementing(int i) {
+		super(i=100);
+		System.out.println(i);
 	}
+
 
 	@Override
 	public void Animal() {

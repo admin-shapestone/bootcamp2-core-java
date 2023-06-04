@@ -3,8 +3,9 @@ package com.shapestone.datatypes;
 public class BooleanPrimitiveExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		boolean isTrue = true;  //It is used to represent boolean values either true or false.
+		System.out.println("The value of the boolean variable is: " + isTrue);
 	}
 
 }

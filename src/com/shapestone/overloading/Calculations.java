@@ -14,6 +14,7 @@ public class Calculations {
 	public static void main(String[] args) {
 		Calculations c = new Calculations();
 		c.add1(5,10);
+		c.add1(10, 20, 30);
 		
 	
 	}

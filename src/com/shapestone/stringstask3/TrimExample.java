@@ -1,0 +1,15 @@
+package com.shapestone.stringstask3;
+
+public class TrimExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   String s1 ="  hello java string   ";    
+	        System.out.println(s1.length());    
+	        System.out.println(s1);   
+	        String tr = s1.trim();    
+	        System.out.println(tr.length());    
+	        System.out.println(tr);  
+	}
+
+}

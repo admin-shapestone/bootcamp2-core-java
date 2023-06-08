@@ -1,4 +1,4 @@
-package com.shapestone.fibonacciseries;
+package com.shapestone.assignmentOne;
 
 public class PrimeNumber {
 	public static void main(String[] args) {

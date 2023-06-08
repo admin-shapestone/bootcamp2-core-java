@@ -1,4 +1,4 @@
-package com.shapestone.fibonacciseries;
+package com.shapestone.assignmentOne;
 
 public class FibonacciExampleTwo {
 	static int n1 = 0, n2 = 1, n3 = 0;

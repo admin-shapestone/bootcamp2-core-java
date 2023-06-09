@@ -8,7 +8,6 @@ public class LowerCase {
 		String s3 = "DEVANSH";
 		System.out.println(s3.toLowerCase());
 		System.out.println(s2.toUpperCase());
-
 	}
 
 }

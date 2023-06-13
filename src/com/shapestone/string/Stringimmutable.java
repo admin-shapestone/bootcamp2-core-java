@@ -1,4 +1,4 @@
-package com.shapestone.strings;
+package com.shapestone.string;
 
 public class Stringimmutable {
 

@@ -5,7 +5,7 @@ public class Car {
 	String colour;
 	int carprice;
 	String carmodel;
-	public Car(String colour,int carprice,String carmodel)  //passing the arguments
+	 Car(String colour,int carprice,String carmodel)  //passing the arguments
 	{
 		this.colour=colour;
 		this.carprice=carprice;

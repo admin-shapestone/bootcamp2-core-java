@@ -1,0 +1,13 @@
+
+[
+    {
+        "title": "Into the Wild",
+        "isbn": "978-8184959628",
+        "year": 2023,
+        "language": "English",
+        "pages": 786,
+        "authors": ["alex", "christopher"],
+        "publishers": ["dreamtech press"]
+    }
+]
+    

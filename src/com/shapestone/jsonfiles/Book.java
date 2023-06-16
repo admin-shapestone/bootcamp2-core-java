@@ -1,4 +1,4 @@
-package com.shapestone.json;
+package com.shapestone.jsonfiles;
 
 import java.util.List;
 

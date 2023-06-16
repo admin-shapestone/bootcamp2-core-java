@@ -1,8 +1,9 @@
-package com.shapestone.json;
+package com.shapestone.jsonfiles;
 
 import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 
 public class BookJsonReader {

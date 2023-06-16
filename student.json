@@ -1,0 +1,77 @@
+
+  [
+  {
+    "name": "Abhilash",
+    "fathername": "java",
+    "mothername": "python",
+    
+     "marks": 
+     {
+      "telugu": "33",
+      "hindi": "55",
+      "english": "66",
+      "maths": "77",
+      "physics": "88",
+      "chemistry": "99"
+    }
+  },
+  {
+    "name": "Akshay",
+    "fathername": "java",
+    "mothername": "python",
+     "marks": 
+     {
+      "telugu": "33",
+      "hindi": "55",
+      "english": "66",
+      "maths": "77",
+      "physics": "88",
+      "chemistry": "99"
+    }
+   
+  },
+  {
+    "name": "nitish",
+    "fathername": "java",
+    "mothername": "python",
+     "marks": 
+     {
+      "telugu": "33",
+      "hindi": "55",
+      "english": "66",
+      "maths": "77",
+      "physics": "88",
+      "chemistry": "99"
+    }
+    },
+  
+  {
+    "name": "funny",
+    "fathername": "java",
+    "mothername": "python",
+   "marks": 
+     {
+      "telugu": "33",
+      "hindi": "55",
+      "english": "66",
+      "maths": "77",
+      "physics": "88",
+      "chemistry": "99"
+    }
+  },
+  {
+    "name": "gopi",
+    "fathername": "java",
+    "mothername": "python",
+     "marks": 
+     {
+      "telugu": "33",
+      "hindi": "55",
+      "english": "66",
+      "maths": "77",
+      "physics": "88",
+      "chemistry": "99"
+    }
+  }
+]
+   

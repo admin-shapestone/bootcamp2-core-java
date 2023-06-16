@@ -1,0 +1,41 @@
+[
+   {
+   "employeName" : "Abhilash",
+   "id" : 2023,
+   "department": "Java",
+   "bloodGroup": "B+"
+   },
+   {
+   "employeName" : "Akshay",
+   "id" : 2025,
+   "department": "Hr",
+   "bloodGroup": "AB+"
+   },
+   {
+   "employeName" : "Gopi",
+   "id" : 2027,
+   "department": "Accounting",
+   "bloodGroup": "ab-"
+   },
+   {
+   "employeName" : "Nitish",
+   "id" : 2020,
+   "department": "Java",
+   "bloodGroup": "B+"
+   },
+   {
+   "employeName" : "Nagesh",
+   "id" : 2020,
+   "department": "Accounting",
+   "bloodGroup": "B+"
+   },
+   {
+   "employeName" : "PhaniSriRama",
+   "id" : 2019,
+   "department": "Java",
+   "bloodGroup": "A+"
+   }
+   ]
+   
+   
+

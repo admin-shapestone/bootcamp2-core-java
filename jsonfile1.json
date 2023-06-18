@@ -1,0 +1,30 @@
+
+[
+    {
+      "name":"Abhilash",
+      "course":"java",
+      "phoneNumber":"112233445566"
+     
+      
+      },
+    {
+      "name":"Akshay",
+      "course":"java",
+      "phoneNumber":"112233445566"
+    },
+    {
+      "name":"Gopi",
+      "course":"java",
+      "phoneNumber":"112233445566"
+    },
+    {
+      "name":"Nithish",
+      "course":"java",
+      "phoneNumber":"112233445566"
+    },
+    {
+      "name":"Nagesh",
+      "course":"java",
+      "phoneNumber":"112233445566"
+    }
+    ]

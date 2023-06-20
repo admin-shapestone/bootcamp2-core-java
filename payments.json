@@ -1,0 +1,30 @@
+[
+	{
+		"slNo": 1,
+		"accountId" : 123459,
+		"purposeOfPayment": "Breakfast",
+		"amountPaid": 100,
+		"amountReceived": 0,
+		"dateOfPayment": "2023-06-19"
+		
+	}
+	,
+	{
+		"slNo": 2,
+		"accountId" : 123459,
+		"purposeOfPayment": "CC bill",
+		"amountPaid": 1000,
+		"amountReceived": 0,
+		"dateOfPayment": "2023-06-19"
+		
+	},
+	{
+		"slNo": 1,
+		"accountId" : 123459,
+		"purposeOfPayment": "Breakfast",
+		"amountPaid": 0,
+		"amountReceived": 20000,
+		"dateOfPayment": "2023-06-19"
+		
+	}
+]

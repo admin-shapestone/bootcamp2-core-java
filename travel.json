@@ -1,0 +1,56 @@
+[
+  {
+    "slNo": 1,
+    "passengerId": 786,
+    "originCity": "Kphb",
+    "destinationCity": "Khammam",
+    "distance": 197,
+    "modeOfTransport": "Car",
+    "pricePerKm": 22
+  },
+  {
+    "slNo": 2,
+    "passengerId": 999,
+    "originCity": "Kphb",
+    "destinationCity": "Machilipatnam",
+    "distance": 320,
+    "modeOfTransport": "Car",
+    "pricePerKm": 22
+  },
+  {
+    "slNo": 3,
+    "passengerId": 852,
+    "originCity": "kphb",
+    "destinationCity": "Bezawada",
+    "distance": 272,
+    "modeOfTransport": "Car",
+    "pricePerKm": 22
+  },
+  {
+    "slNo": 4,
+    "passengerId": 741,
+    "originCity": "kphb",
+    "destinationCity": "Gadwal",
+    "distance": 190,
+    "modeOfTransport": "Car",
+    "pricePerKm": 22
+  },
+  {
+    "slNo": 5,
+    "passengerId": 963,
+    "originCity": "kphb",
+    "destinationCity": "Kodad",
+    "distance": 179,
+    "modeOfTransport": "Car",
+    "pricePerKm": 22
+  },
+  {
+    "slNo": 6,
+    "passengerId": 369,
+    "originCity": "kphb",
+    "destinationCity": "Guntur",
+    "distance": 305,
+    "modeOfTransport": "Car",
+    "pricePerKm": 22
+  }
+]

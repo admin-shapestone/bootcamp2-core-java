@@ -1,0 +1,39 @@
+
+   [
+    {
+      "name" : "Gopi",
+      "id" : "1001",
+      "age" : "25",
+      "gender" : "male",
+      "dateofadmission" : "26-6-2023"
+    },
+    {
+      "name" : "nandhini",
+      "id" : "1200",
+      "age" : "18",
+      "gender" : "female",
+      "dateofadmission" : "6-6-2023"
+    },
+    {
+      "name" : "nithish",
+      "id" : "1122",
+      "age" : "23",
+      "gender" : "male",
+      "dateofadmission" : "2-6-2023"
+    },
+    {
+      "name" : "sana",
+      "id" : "1432",
+      "age" : "26",
+      "gender" : "female",
+      "dateofadmission" : "16-6-2023"
+    },
+    {
+      "name" : "nagesh ",
+      "id" : "1234",
+      "age" : "29",
+      "gender" : "male",
+      "dateofadmission" : "9-6-2023"
+    }
+  ]
+

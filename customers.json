@@ -1,0 +1,30 @@
+ [
+  {
+    "customerId": "123",
+    "name": "phani ram",
+    "age": 25,
+    "gender": "Male",
+    "dateOfPurchase": "2023-06-21"
+  },
+  {
+    "customerId": "234",
+    "name": "nithish R",
+    "age": 22,
+    "gender": "Male",
+    "dateOfPurchase": "2023-06-18"
+  },
+  {
+    "customerId": "345",
+    "name": "abhilash",
+    "age": 23,
+    "gender": "Male",
+    "dateOfPurchase": "2023-06-20"
+  },
+  {
+   "customerId": "456",
+   "name":"akshay",
+   "age": 23,
+   "gender": "Male",
+   "dateOfPurchase": "20-06-2023"
+   }
+  ]

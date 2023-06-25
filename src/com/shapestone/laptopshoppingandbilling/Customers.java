@@ -1,11 +1,19 @@
 package com.shapestone.laptopshoppingandbilling;
 
 public class Customers {
+	private int sNo;
 	private String customerId;
 	private String name;
 	private int age;
 	private String gender;
 	private String dateOfPurchase;
+	
+	public int getsNo() {
+		return sNo;
+	}
+	public void setsNo(int sNo) {
+		this.sNo = sNo;
+	}
 	public String getCustomerId() {
 		return customerId;
 	}

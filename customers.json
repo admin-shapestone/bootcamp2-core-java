@@ -1,5 +1,6 @@
  [
   {
+    "sNo": 1,
     "customerId": "123",
     "name": "phani ram",
     "age": 25,
@@ -7,6 +8,7 @@
     "dateOfPurchase": "2023-06-21"
   },
   {
+    "sNo": 2,
     "customerId": "234",
     "name": "nithish R",
     "age": 22,
@@ -14,6 +16,7 @@
     "dateOfPurchase": "2023-06-18"
   },
   {
+    "sNo": 3,
     "customerId": "345",
     "name": "abhilash",
     "age": 23,
@@ -21,6 +24,7 @@
     "dateOfPurchase": "2023-06-20"
   },
   {
+   "sNo": 4 ,
    "customerId": "456",
    "name":"akshay",
    "age": 23,

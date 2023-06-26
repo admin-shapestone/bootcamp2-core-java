@@ -5,7 +5,7 @@
     "dateOfReleving": "2018-05-15",
     "amountReceived": 23000,
     "companyName": "LNT Corporation",
-    "ctcTimeOfReleving": "297,950"
+    "ctcTimeOfReleving": 297950
   },
   {
     "slno": 2,
@@ -13,7 +13,7 @@
     "dateOfReleving": "2023-05-20",
     "amountReceived": 18000,
     "companyName": "Tata Corporation",
-    "ctcTimeOfReleving": "295,900"
+    "ctcTimeOfReleving": 295900
   },
   {
     "slno": 3,
@@ -21,7 +21,7 @@
     "dateOfReleving": "2014-02-05",
     "amountReceived": 20000,
     "companyName": "Textile Industries",
-    "ctcTimeOfReleving": "292,800"
+    "ctcTimeOfReleving": 292800
   },
   {
     "slno": 4,
@@ -29,6 +29,6 @@
     "dateOfReleving": "2020-12-15",
     "amountReceived": 22000,
     "companyName": "Avalon Solutions",
-    "ctcTimeOfReleving": "293,900"
+    "ctcTimeOfReleving": 293900
   }
 ]

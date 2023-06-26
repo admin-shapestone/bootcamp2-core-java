@@ -8,6 +8,13 @@ public class Employee {
 	private String gender;
 	private String address;
 	private long phoneNumber;
+	private String dateOfJoining;
+	public String getDateOfJoining() {
+		return dateOfJoining;
+	}
+	public void setDateOfJoining(String dateOfJoining) {
+		this.dateOfJoining = dateOfJoining;
+	}
 	public int getId() {
 		return id;
 	}

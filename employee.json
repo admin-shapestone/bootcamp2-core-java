@@ -6,7 +6,8 @@
       "age": 25,
       "gender": "male",
       "address": "hyderabad",
-      "phoneNumber": 6281494760
+      "phoneNumber": 6281494760,
+      "dateOfJoining": "23-06-2023"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "age": 23,
       "gender": "male",
       "address": "nandigama",
-      "phoneNumber": 9381712215
+      "phoneNumber": 9381712215,
+      "dateOfJoining": "21-06-2023"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "age": 27,
       "gender": "male",
       "address": "vijayawada",
-      "phoneNumber": 9999999999
+      "phoneNumber": 9999999999,
+      "dateOfJoining": "25-06-2023"
     },
     {
       "id": 4,
@@ -30,6 +33,7 @@
       "age": 23,
       "gender": "male",
       "address": "machilipatnam",
-      "phoneNumber": 9666256616
+      "phoneNumber": 9666256616,
+      "dateOfJoining": "30-06-2023"
     }
   ]

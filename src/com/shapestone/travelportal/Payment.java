@@ -41,7 +41,6 @@ public class Payment {
 
 		// Option 1: Display total amount each passenger has to pay
 		if (option == 1) {
-			// Display a table header
 			TravelAmount tm = new TravelAmount();
 			tm.Amount(bookingList, amountList);
 		}

@@ -11,7 +11,7 @@
     "passengerName": "Phani",
     "age": 25,
     "gender": "Male",
-    "dateOfJourney": "23-06-2023"
+    "dateOfJourney": "24-06-2023"
   },
   {
     "passengerId": 852,
@@ -32,13 +32,13 @@
     "passengerName": "Gopi",
     "age": 26,
     "gender": "Male",
-    "dateOfJourney": "01-07-2023"
+    "dateOfJourney": "24-06-2023"
   },
   {
     "passengerId": 369,
     "passengerName": "Abhi",
     "age": 20,
     "gender": "Male",
-    "dateOfJourney": "13-07-2023"
+    "dateOfJourney": "24-07-2023"
   }
 ]

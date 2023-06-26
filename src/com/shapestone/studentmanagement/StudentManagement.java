@@ -32,34 +32,13 @@ public class StudentManagement {
 				});
 
 		if (choose == 1) {
-			System.out.println(
-					"---------------------------------------------------------------------------------------------------------|");
-			System.out.printf("|%-15s %-15s %-15s|%-15s| %-15s | %-15s |%n", "Student ID", "Student Name",
-					"StudentGender", "StudentAge", "StudentDateOfJoining", "StudentAddress");
-			System.out.println(
-					"----------------------------------------------------------------------------------------------------------|");
-			Collections.sort(studentList, new Comparator<Student>() {
-				public int compare(Student s1, Student s2) {
-					return s1.getStudentName().compareToIgnoreCase(s2.getStudentName());
-				}
-			});
-
-			for (Student student : studentList) {
-				System.out.printf("|%-15s | %-15s | %-15s | %-15s | %-15s | %-15s|%n", student.getStudentId(),
-						student.getStudentName(), student.getStudentGender(), student.getStudentAge(),
-						student.getStudentDateOfJoining(), student.getStudentAddress());
-
-			}
-
-			System.out.println(
-					"---------------------------------------------------------------------------------------------------------|");
-			System.out.printf("|%-15s %-15s %-15s|%-15s| %-15s | %-15s |%n", "Student ID", "Student Name",
-					"StudentGender", "StudentAge", "StudentDateOfJoining", "StudentAddress");
-			System.out.println(
-					"----------------------------------------------------------------------------------------------------------|");
+			NamesSorting ns = new NamesSorting();
+			ns.Sort(studentList);
 		} else if (choose == 2) {
+			AmountForCertification ac = new AmountForCertification();
+			ac.Certificates(certificatesList);
 			System.out.println(
-					"-----------------------------------------------------------------------------------------------------------|");
+					"---------------------------------------------------------------------------------------------------------|");
 			System.out.printf("|%-15s |%-15s |%-15s |%-15s |%-15s|%n", "Slno", "StudentID", "Fees", "Certification",
 					"DateOfJoining");
 
@@ -71,7 +50,7 @@ public class StudentManagement {
 						s.getStudentName(), s.getStudentGender(), s.getStudentAge(), s.getStudentDateOfJoining(),
 						s.getStudentAddress());
 				System.out.println(
-						"-----------------------------------------------------------------------------------------------------------|");
+						"------------------------------------------------------------------------------------------------------|");
 
 			}
 
@@ -85,6 +64,8 @@ public class StudentManagement {
 			}
 
 		} else if (choose == 3) {
+			CertificateDoneByToday cd = new CertificateDoneByToday();
+			cd.Certificates(certificatesList);
 			for (int j = 0; j < certificatesList.size(); j++) {
 				Certificates c1 = certificatesList.get(j);
 				if (certificatedonebytoday.equals(c1.getDateOfCertificationDone()))
@@ -97,9 +78,9 @@ public class StudentManagement {
 
 				}
 			}
-		}else {
+		} else {
 			System.out.println("invalid option choose valid option");
 		}
-		
+
 	}
 }

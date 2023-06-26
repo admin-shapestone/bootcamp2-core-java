@@ -2,27 +2,27 @@ package com.shapestone.patientdetails;
 
 public class PatientP {
 	private String name;
-	private String id;
-	private String age;
+	private int id;
+	private int age;
 	private String gender;
 	private String dateofadmission;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getAge() {
-		return age;
-	}
-	public void setAge(String age) {
-		this.age = age;
-	}
-	
+
 	@Override
 	public String toString() {
-		return "PatientPojo [name=" + name + ", id=" + id + ", age=" + age + ", gender=" + gender + ", dateofadmission="
+		return "PatientP [name=" + name + ", id=" + id + ", age=" + age + ", gender=" + gender + ", dateofadmission="
 				+ dateofadmission + "]";
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
 	}
 	public String getName() {
 		return name;

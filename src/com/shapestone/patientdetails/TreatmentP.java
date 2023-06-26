@@ -1,8 +1,8 @@
 package com.shapestone.patientdetails;
 
 public class TreatmentP {
-	private String serialno;
-	private String id;
+	private int serialno;
+	private int id;
 	private String diagnosis;
 	private String treatment;
 	private String dateoftreatment;
@@ -10,26 +10,28 @@ public class TreatmentP {
 	private int doctorfee;
 	private int medicines;
 
+
+
 	@Override
 	public String toString() {
-		return "TreatmentPojo [serialno=" + serialno + ", id=" + id + ", diagnosis=" + diagnosis + ", treatment="
-				+ treatment + ", dateoftreatment=" + dateoftreatment + ", cost=" + ", scanningBill=" + scanningBill
-				+ ", doctorfee=" + doctorfee + ", medicines=" + medicines + "]";
+		return "TreatmentP [serialno=" + serialno + ", id=" + id + ", diagnosis=" + diagnosis + ", treatment="
+				+ treatment + ", dateoftreatment=" + dateoftreatment + ", scanningBill=" + scanningBill + ", doctorfee="
+				+ doctorfee + ", medicines=" + medicines + "]";
 	}
 
-	public String getSerialno() {
+	public int getSerialno() {
 		return serialno;
 	}
 
-	public void setSerialno(String serialno) {
+	public void setSerialno(int serialno) {
 		this.serialno = serialno;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

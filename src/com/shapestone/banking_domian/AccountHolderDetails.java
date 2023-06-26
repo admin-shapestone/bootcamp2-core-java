@@ -9,8 +9,8 @@ public class AccountHolderDetails {
 	public void displayTotalAmount(ArrayList<BankAccountHoldersDetails> driver1) {
 		System.out.println(
 				"-------------------------------------------------------------------------------------------------------------");
-		System.out.printf("| %-15s | %-15s | %-15s|  %-15s |  %-15s | %-15s|%n", "accountId", "name", "age", "gender",
-				"dateOfJoining", "openingBalance");
+		System.out.printf("| %-15s | %-15s | %-15s|  %-15s |  %-15s | %-15s|%n", "Account Id", "Name", "Age", "Gender",
+				"Date Of Joining", "Opening Balance");
 		System.out.println(
 				"---------------------------------------------------------------------------------------------------------------");
 
@@ -73,14 +73,14 @@ public class AccountHolderDetails {
 
 	}
 
-	public class BankAccountDetailsNameComparator implements Comparator<BankAccountHoldersDetails> {
+}
 
-		@Override
-		public int compare(BankAccountHoldersDetails o1, BankAccountHoldersDetails o2) {
+class BankAccountDetailsNameComparator implements Comparator<BankAccountHoldersDetails> {
 
-			return o1.getName().compareTo(o2.getName());
+	@Override
+	public int compare(BankAccountHoldersDetails o1, BankAccountHoldersDetails o2) {
 
-		}
+		return o1.getName().compareTo(o2.getName());
+
 	}
-
 }

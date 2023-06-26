@@ -18,8 +18,7 @@ public class DriverMain {
 
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws StreamReadException, DatabindException, IOException {
-		double totalBalance = 0;
-		double sumOfAllDebits = 0;
+
 		ObjectMapper mapper = new ObjectMapper();
 
 		ArrayList<Payments> payments = new ArrayList<>();

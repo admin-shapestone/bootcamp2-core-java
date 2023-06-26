@@ -1,6 +1,6 @@
 package com.shapestone.banking_domian;
 
-public class Driver1 {
+public class BankAccountHoldersDetails {
 
 	private long accountId;
 
@@ -9,6 +9,8 @@ public class Driver1 {
 	private String gender;
 	private String dateOfJoining;
 	private double openingBalance;
+
+
 
 	public long getAccountId() {
 		return accountId;
@@ -57,5 +59,14 @@ public class Driver1 {
 	public void setOpeningBalance(double openingBalance) {
 		this.openingBalance = openingBalance;
 	}
+
+	@Override
+	public String toString() {
+		return "BankAccountHoldersDetails [accountId=" + accountId + ", name=" + name + ", age=" + age + ", gender="
+				+ gender + ", dateOfJoining=" + dateOfJoining + ", openingBalance=" + openingBalance + "]";
+	}
+
+	
+	
 
 }

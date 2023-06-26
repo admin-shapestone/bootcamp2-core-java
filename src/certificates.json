@@ -1,0 +1,38 @@
+[
+  {
+    "slno": 1,
+    "studentId": "101",
+    "certification": "java",
+    "fees": 45000,
+    "dateOfCertificationDone": "24-06-2023"
+  },
+  {
+    "slno": 2,
+    "studentId": "102",
+    "certification": "python",
+    "fees": 30000,
+    "dateOfCertificationDone": "06-18-2023"
+  },
+  {
+    "slno": 3,
+    "studentId": "103",
+    "certification": "cloud",
+    "fees": 35000,
+    "dateOfCertificationDone": "05-01-2023"
+  },
+  {
+    "slno": 4,
+    "studentId": "104",
+    "certification": "dataScience",
+    "fees": 50000,
+    "dateOfCertificationDone": "06-21-2023"
+  },
+  {
+    "slno": 5,
+    "studentId": "105",
+    "certification": "javaScript",
+    "fees": 25000,
+    "dateOfCertificationDone": "01-21-2023"
+ 
+  }
+]

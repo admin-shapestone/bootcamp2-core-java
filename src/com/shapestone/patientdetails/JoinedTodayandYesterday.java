@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class JoinedTodayandYesterday {
 	public void TodayandYesterday(ArrayList<PatientP> patientList, ArrayList<TreatmentP> treatmentList) {
+		// accessing the patientList and treatmentList from the main class
 		String todaysDate = "23-6-2023";
 		String yesterdayDate = "22-6-2023";
 		System.out.println(

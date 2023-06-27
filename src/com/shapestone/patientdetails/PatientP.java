@@ -1,11 +1,13 @@
 package com.shapestone.patientdetails;
 
+import java.util.Date;
+
 public class PatientP {
 	private String name;
 	private int id;
 	private int age;
 	private String gender;
-	private String dateofadmission;
+	private Date dateofadmission;
 
 	@Override
 	public String toString() {
@@ -38,10 +40,10 @@ public class PatientP {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getDateofadmission() {
+	public Date getDateofadmission() {
 		return dateofadmission;
 	}
-	public void setDateofadmission(String dateofadmission) {
+	public void setDateofadmission(Date dateofadmission) {
 		this.dateofadmission = dateofadmission;
 	}
 }

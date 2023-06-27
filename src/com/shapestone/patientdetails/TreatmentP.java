@@ -2,7 +2,7 @@ package com.shapestone.patientdetails;
 
 public class TreatmentP {
 	private int serialno;
-	private int id;
+	private int patientId;
 	private String diagnosis;
 	private String treatment;
 	private String dateoftreatment;
@@ -14,7 +14,7 @@ public class TreatmentP {
 
 	@Override
 	public String toString() {
-		return "TreatmentP [serialno=" + serialno + ", id=" + id + ", diagnosis=" + diagnosis + ", treatment="
+		return "TreatmentP [serialno=" + serialno + ", id=" + patientId + ", diagnosis=" + diagnosis + ", treatment="
 				+ treatment + ", dateoftreatment=" + dateoftreatment + ", scanningBill=" + scanningBill + ", doctorfee="
 				+ doctorfee + ", medicines=" + medicines + "]";
 	}
@@ -27,12 +27,14 @@ public class TreatmentP {
 		this.serialno = serialno;
 	}
 
-	public int getId() {
-		return id;
+	
+
+	public int getPatientId() {
+		return patientId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setPatientId(int patientId) {
+		this.patientId = patientId;
 	}
 
 	public String getDiagnosis() {

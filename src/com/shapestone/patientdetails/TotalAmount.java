@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TotalAmount {
-	public void DisplayToatalAmount(ArrayList<PatientP> patientList, ArrayList<TreatmentP> treatmentList) {
+	public void displayToatalAmount(ArrayList<PatientP> patientList, ArrayList<TreatmentP> treatmentList) {
 
 		System.out.println(
 				"-----------------------------------------------------------------------");

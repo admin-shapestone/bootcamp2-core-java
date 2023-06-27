@@ -28,27 +28,27 @@ public class DriverProgrm {
 		ObjectMapper objectMapper = new ObjectMapper(); 
 		 objectMapper.setDateFormat(new SimpleDateFormat("dd-MM-yyyy"));
 		// Read patient data from JSON file
-		ArrayList<PatientP> patientList = objectMapper.readValue(
+		ArrayList<PatientPo> patientList = objectMapper.readValue(
 				DriverProgrm.class.getResourceAsStream("/com/shapestone/patientdetails/patients.json"),
-				new TypeReference<ArrayList<PatientP>>() {
+				new TypeReference<ArrayList<PatientPo>>() {
 				});
 		
 		// Read treatment data from JSON file
-		ArrayList<TreatmentP> treatmentList = objectMapper.readValue(
+		ArrayList<TreatmentPo> treatmentList = objectMapper.readValue(
 				DriverProgrm.class.getResourceAsStream("/com/shapestone/patientdetails/treatments.json"),
-				new TypeReference<ArrayList<TreatmentP>>() {
+				new TypeReference<ArrayList<TreatmentPo>>() {
 				});
 
 		if (option == 1) {
 			TotalAmount t = new TotalAmount();
-			t.DisplayToatalAmount(patientList, treatmentList);
+			t.displayToatalAmount(patientList, treatmentList);
 
 		} else if (option == 2) {
 			JoinedTodayandYesterday ty = new JoinedTodayandYesterday();
-			ty.TodayandYesterday(patientList);
+			ty.todayandYesterday(patientList);
 		} else if (option == 3) {
 			SortNames s = new SortNames();
-			s.Names(patientList, treatmentList);
+			s.names(patientList, treatmentList);
 		} else {
 			System.out.println("invalid option enter valid option");
 		}

@@ -8,7 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class JoinedTodayandYesterday {
-	public void TodayandYesterday(ArrayList<PatientP> patientList) {
+	public void todayandYesterday(ArrayList<PatientP> patientList) {
 		// accessing the patientList and treatmentList from the main class
 
 		Date date = new Date();

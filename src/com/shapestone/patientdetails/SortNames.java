@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class SortNames {
-	public void Names(ArrayList<PatientP> patientList, ArrayList<TreatmentP> treatmentList) {
+	public void names(ArrayList<PatientP> patientList, ArrayList<TreatmentP> treatmentList) {
 		System.out.println("------------------------------------------------------------------|");
 		System.out.println("------------------------- PATIENTS DETAILS -----------------------|");
 		System.out.println("-------------------------------------------------------------------");

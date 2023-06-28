@@ -1,5 +1,7 @@
 package com.shapestone.banking_domian;
 
+import java.util.Date;
+
 public class Payments {
 
 	private int slNo;
@@ -7,7 +9,7 @@ public class Payments {
 	private String purposeOfPayment;
 	private long amountPaid;
 	private long amountRecieved;
-	private String dateOfPayment;
+	private Date dateOfPayment;
 
 	public int getSlNo() {
 		return slNo;
@@ -49,11 +51,11 @@ public class Payments {
 		this.amountRecieved = amountRecieved;
 	}
 
-	public String getDateOfPayment() {
+	public Date getDateOfPayment() {
 		return dateOfPayment;
 	}
 
-	public void setDateOfPayment(String dateOfPayment) {
+	public void setDateOfPayment(Date dateOfPayment) {
 		this.dateOfPayment = dateOfPayment;
 	}
 

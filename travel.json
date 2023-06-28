@@ -6,8 +6,10 @@
     "destinationCity": "Khammam",
     "distance": 197,
     "modeOfTransport": "Car",
-    "pricePerKm": 22
+    "pricePerKm": 22.2,
+    "totalTravelPrice":0
   },
+
   {
     "slNo": 2,
     "passengerId": 999,
@@ -15,7 +17,8 @@
     "destinationCity": "Machilipatnam",
     "distance": 320,
     "modeOfTransport": "Car",
-    "pricePerKm": 22
+    "pricePerKm": 22.2,
+    "totalTravelPrice":0
   },
   {
     "slNo": 3,
@@ -24,7 +27,8 @@
     "destinationCity": "Bezawada",
     "distance": 272,
     "modeOfTransport": "Car",
-    "pricePerKm": 22
+    "pricePerKm": 22.2,
+    "totalTravelPrice":0
   },
   {
     "slNo": 4,
@@ -33,7 +37,8 @@
     "destinationCity": "Gadwal",
     "distance": 190,
     "modeOfTransport": "Car",
-    "pricePerKm": 22
+    "pricePerKm": 22.2,
+    "totalTravelPrice":0
   },
   {
     "slNo": 5,
@@ -42,7 +47,8 @@
     "destinationCity": "Kodad",
     "distance": 179,
     "modeOfTransport": "Car",
-    "pricePerKm": 22
+    "pricePerKm": 22.2,
+    "totalTravelPrice":0
   },
   {
     "slNo": 6,
@@ -51,6 +57,17 @@
     "destinationCity": "Guntur",
     "distance": 305,
     "modeOfTransport": "Car",
-    "pricePerKm": 22
+    "pricePerKm": 22.2,
+    "totalTravelPrice":0
+  },
+  {
+    "slNo": 7,
+    "passengerId": 786,
+    "originCity": "Khammam",
+    "destinationCity": "Nandigama",
+    "distance": 197,
+    "modeOfTransport": "Car",
+    "pricePerKm": 22.2,
+    "totalTravelPrice":0
   }
 ]

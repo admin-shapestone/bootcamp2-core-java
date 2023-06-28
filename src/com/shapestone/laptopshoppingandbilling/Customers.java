@@ -1,12 +1,14 @@
 package com.shapestone.laptopshoppingandbilling;
 
+import java.util.Date;
+
 public class Customers {
 	private int sNo;
 	private String customerId;
 	private String name;
 	private int age;
 	private String gender;
-	private String dateOfPurchase;
+	private Date dateOfPurchase;
 	
 	public int getsNo() {
 		return sNo;
@@ -38,10 +40,10 @@ public class Customers {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getDateOfPurchase() {
+	public Date getDateOfPurchase() {
 		return dateOfPurchase;
 	}
-	public void setDateOfPurchase(String dateOfPurchase) {
+	public void setDateOfPurchase(Date dateOfPurchase) {
 		this.dateOfPurchase = dateOfPurchase;
 	}
 

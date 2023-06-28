@@ -10,7 +10,7 @@
   {
     "sNo": 2,
     "customerId": "234",
-    "name": "nithish R",
+    "name": "Nithish R",
     "age": 22,
     "gender": "Male",
     "dateOfPurchase": "2023-06-18"
@@ -18,17 +18,17 @@
   {
     "sNo": 3,
     "customerId": "345",
-    "name": "abhilash",
+    "name": "Abhilash",
     "age": 23,
     "gender": "Male",
-    "dateOfPurchase": "2023-06-20"
+    "dateOfPurchase": "2023-06-29"
   },
   {
    "sNo": 4 ,
    "customerId": "456",
-   "name":"akshay",
+   "name":"Akshay",
    "age": 23,
    "gender": "Male",
-   "dateOfPurchase": "20-06-2023"
+   "dateOfPurchase": "2023-06-28"
    }
   ]

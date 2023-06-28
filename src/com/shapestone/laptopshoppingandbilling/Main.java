@@ -1,30 +1,52 @@
 package com.shapestone.laptopshoppingandbilling;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class PurchasedLaptops {
+public class Main {
 	public static void main(String[] args) throws StreamReadException, DatabindException, IOException {
-		ObjectMapper purchase = new ObjectMapper();
-		Customers[] customer = purchase.readValue(new java.io.File("customers.json"), Customers[].class);
-		Purchases[] today = purchase.readValue(new java.io.File("purchases.json"), Purchases[].class);
-		String todayPurchase = "2023-06-21";
-		System.out.println(
-				"----------------------------------------------------------------------------------------------------------------------------------");
-		System.out.printf("| %-17s | %-17s | %-17s | %-17s | %-17s | %-15s | %-9s |%n", "Customer ID", "Name", "Age", "Gender",
-				"Date Of Purchase", "Product ", "Price ");
-		System.out.println(
-				"----------------------------------------------------------------------------------------------------------------------------------");
-		for (int i = 0; i <= customer.length - 1; i++)
-			if (todayPurchase.equals(customer[i].getDateOfPurchase())) {
-				System.out.printf("| %-17s | %-17s | %-17s | %-17s | %-17s | %-15s | %-9s |%n", customer[i].getCustomerId(),
-						customer[i].getName(), customer[i].getAge(), customer[i].getGender(),
-						customer[i].getDateOfPurchase(),today[i].getProduct(),today[i].getPrice());
 
-			}
+		System.out.println(
+				"--------------------------------------------------------***Welcome To Laptop Purchase***----------------------------------------------------------------");
+		System.out.println("Enter Option 1 For Laptops Purshased Today");
+		System.out.println("Enter Option 2 For Customers Sorted BY Name.");
+		System.out.println("Enter Option 3 For Total Payment");
 
+		Scanner scanner = new Scanner(System.in);
+		int option = scanner.nextInt();
+
+		ObjectMapper objectMapper = new ObjectMapper();
+
+		objectMapper.setDateFormat(new SimpleDateFormat("yyyy-mm-dd"));
+
+		ArrayList<Customers> customers = new ArrayList<>();
+		ArrayList<Purchases> purchases = new ArrayList<>();
+		customers = objectMapper.readValue(new java.io.File("customers.json"),
+				new TypeReference<ArrayList<Customers>>() {
+				});
+		purchases = objectMapper.readValue(new java.io.File("purchases.json"),
+				new TypeReference<ArrayList<Purchases>>() {
+				});
+
+		if (option == 1) {
+			PurchasedLaptopsToday laptopsToday = new PurchasedLaptopsToday();
+			laptopsToday.purchasedLaptopsToday(customers, purchases);
+		} else if (option == 2) {
+			CustomersSortedByName sortedByName = new CustomersSortedByName();
+			sortedByName.customersSorted(customers, purchases);
+		} else if (option == 3) {
+			PrintTotalPayment payment = new PrintTotalPayment();
+			payment.printTotalPayment(customers, purchases);
+		} else {
+			System.out.println("Invalid Option...Choose Correct Option And Try Again.");
+		}
 	}
+
 }

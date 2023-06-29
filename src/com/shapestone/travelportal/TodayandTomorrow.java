@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.ArrayList;
 
 public class TodayandTomorrow {
-	public void today(ArrayList<PassengerDetails> amountList) {
+	public void displayPassengerWhoIsTravellingTodayAndTomorrow(ArrayList<PassengerDetails> amountList) {
 		Date date = new Date();
 		System.out.println(
 				"````````````````````````````````````````````````````````````````````````````````````````````````````````````");

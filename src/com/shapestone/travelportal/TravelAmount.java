@@ -8,7 +8,27 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 public class TravelAmount {
 
-	public void amount(ArrayList<BookingDetails> bookingList, ArrayList<PassengerDetails> amountList) {
+	public void calculateTotalPriceForEachPasenger(ArrayList<BookingDetails> bookingList,
+			ArrayList<PassengerDetails> amountList) {
+
+		System.out.printf("|%-20s| %-20s|%-20s| %-20s|%-20s|%-20s|%n", "Passenger ID", "Passenger Name", "Age",
+				"Gender", "Date Of Journey", "TotalPrice");
+		System.out.println(
+				"................................................................................................................................");
+		for (int i = 0; i < amountList.size(); i++) {
+			PassengerDetails aa = amountList.get(i);
+
+			System.out.printf("|%-20s| %-20s|%-20s| %-20s|%-20s|%-20s|%n", aa.getPassengerId(), aa.getPassengerName(),
+					aa.getAge(), aa.getGender(), aa.getDateOfJourney(), aa.getTotalPrice());
+
+			System.out.println(
+					"................................................................................................................................");
+
+		}
+	}
+
+	public void printTotalTravelsForAllPassenger(ArrayList<BookingDetails> bookingList,
+			ArrayList<PassengerDetails> amountList) {
 		System.out.println(
 				"-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 		System.out.printf("|%-20s| %-20s|%-20s| %-20s|%-20s| %-20s|%-20s| %-20s|%n", "Sl no", "Passenger Id",
@@ -34,23 +54,6 @@ public class TravelAmount {
 					"-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 		}
 
-		System.out.println(
-				"................................................................................................................................");
-
-		System.out.printf("|%-20s| %-20s|%-20s| %-20s|%-20s|%-20s|%n", "Passenger ID", "Passenger Name", "Age",
-				"Gender", "Date Of Journey", "TotalPrice");
-		System.out.println(
-				"................................................................................................................................");
-		for (int i = 0; i < amountList.size(); i++) {
-			PassengerDetails aa = amountList.get(i);
-
-			System.out.printf("|%-20s| %-20s|%-20s| %-20s|%-20s|%-20s|%n", aa.getPassengerId(), aa.getPassengerName(),
-					aa.getAge(), aa.getGender(), aa.getDateOfJourney(), aa.getTotalPrice());
-
-			System.out.println(
-					"................................................................................................................................");
-
-		}
 	}
 
 }

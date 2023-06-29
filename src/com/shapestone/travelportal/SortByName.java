@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class SortByName {
 
-	public void sort(ArrayList<PassengerDetails> amountList) {
+	public void printPassengerNamesInAssendingOrder(ArrayList<PassengerDetails> amountList) {
 		System.out.println(
 				"............................................................................................................");
 		System.out.printf("|%-20s| %-20s|%-20s| %-20s|%-20s|%n", "PassengerId", "PassengerName", "Age", "Gender",

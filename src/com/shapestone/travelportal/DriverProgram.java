@@ -25,9 +25,10 @@ public class DriverProgram {
 		// Create a Scanner object to read user input
 		Scanner sc = new Scanner(System.in);
 		// Display options for the user to choose from
-		System.out.println("Enter OPtion 1 For Toatal Total Amount Passenger has to Pay. ");
-		System.out.println("Enter OPtion 2 Passengers Sorted by Name. ");
-		System.out.println("Enter OPtion 3 For Passengers Scheduled For Today and Tomorrow. ");
+		System.out.println("Enter OPtion 1 for Toatal amount passenger has to pay. ");
+		System.out.println("Enter OPtion 2 for Passengers sorted by name. ");
+		System.out.println("Enter OPtion 3 for Passengers scheduled for today and tomorrow. ");
+		System.out.println("Enter OPtion 4 for Total travels for all passengers. ");
 
 		int option = sc.nextInt();
 		// Create an ObjectMapper object to read JSON files
@@ -48,17 +49,21 @@ public class DriverProgram {
 		// Option 1: Display total amount each passenger has to pay
 		if (option == 1) {
 
-			tm.amount(bookingList, amountList);
+			tm.calculateTotalPriceForEachPasenger(bookingList, amountList);
 
 		}
 		// Option 2: Display passengers sorted by name
 		else if (option == 2) {
 			SortByName s = new SortByName();
-			s.sort(amountList);
+			s.printPassengerNamesInAssendingOrder(amountList);
 			// Option 3: Display passengers scheduled for today and tomorrow
 		} else if (option == 3) {
 			TodayandTomorrow t = new TodayandTomorrow();
-			t.today(amountList);
+			t.displayPassengerWhoIsTravellingTodayAndTomorrow(amountList);
+		} else if (option == 4) {
+			tm.printTotalTravelsForAllPassenger(bookingList, amountList);
+		} else {
+			System.out.println("Invalid option selected ....");
 		}
 	}
 }

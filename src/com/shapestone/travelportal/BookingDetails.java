@@ -9,14 +9,12 @@ public class BookingDetails {
 	private String modeOfTransport;
 	private float pricePerKm;
 	private float totalTravelPrice;
-	
-		
 
 	@Override
 	public String toString() {
 		return "Booking [slNo=" + slNo + ", passengerId=" + passengerId + ", originCity=" + originCity
 				+ ", destinationCity=" + destinationCity + ", distance=" + distance + ", modeOfTransport="
-				+ modeOfTransport + ", pricePerKm=" + pricePerKm +",totalTravelPrice="+totalTravelPrice+ "]";
+				+ modeOfTransport + ", pricePerKm=" + pricePerKm + ",totalTravelPrice=" + totalTravelPrice + "]";
 	}
 
 	public int getSlNo() {
@@ -74,11 +72,14 @@ public class BookingDetails {
 	public void setPricePerKm(float pricePerKm) {
 		this.pricePerKm = pricePerKm;
 	}
-	public void settotalTravelPrice(float pr)
-	{
-		this.totalTravelPrice=pr;
-		
+
+	public void settotalTravelPrice(float pr) {
+		this.totalTravelPrice = pr;
+
 	}
-	public float gettotalTravelPrice() {return this.totalTravelPrice;}
+
+	public float gettotalTravelPrice() {
+		return this.totalTravelPrice;
+	}
 
 }

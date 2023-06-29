@@ -1,0 +1,51 @@
+
+[
+  {
+    "passengerId": 786,
+    "passengerName": "Nitish Rayapati",
+    "age": 23,
+    "gender": "Male",
+    "dateOfJourney": "29-06-2023",
+    "totalPrice":0
+  },
+  {
+    "passengerId": 999,
+    "passengerName": "Phani",
+    "age": 25,
+    "gender": "Male",
+    "dateOfJourney": "28-06-2023",
+    "totalPrice":0
+  },
+  {
+    "passengerId": 852,
+    "passengerName": "Nagesh",
+    "age": 40,
+    "gender": "Male",
+    "dateOfJourney": "25-06-2023",
+    "totalPrice":0
+  },
+  {
+    "passengerId": 741,
+    "passengerName": "Akshy",
+    "age": 24,
+    "gender": "Male",
+    "dateOfJourney": "28-06-2023",
+    "totalPrice":0
+  },
+  {
+    "passengerId": 963,
+    "passengerName": "Gopi",
+    "age": 26,
+    "gender": "Male",
+    "dateOfJourney": "29-06-2023",
+    "totalPrice":0
+  },
+  {
+    "passengerId": 369,
+    "passengerName": "Abhi",
+    "age": 20,
+    "gender": "Male",
+    "dateOfJourney": "30-06-2023",
+    "totalPrice":0
+  }
+]

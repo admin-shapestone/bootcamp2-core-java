@@ -1,0 +1,62 @@
+ [
+    {
+      "serialno" : 1,
+      "patientId" : 1001,
+      "diagnosis" : "eye",
+      "treatment" : "eyetest",
+      "dateoftreatment" : "28-6-2023",
+      "scanningBill" : 2000,
+     "doctorfee" : 500,
+     "medicines" : 4000
+    },
+    {
+    "serialno" : 6,
+      "patientId" : 1001,
+      "diagnosis" : "ear",
+      "treatment" : "eartest",
+      "dateoftreatment" : "28-6-2023",
+      "scanningBill" : 600,
+     "doctorfee" : 500,
+     "medicines" : 1000
+     },
+     {
+      "serialno" : 2,
+      "patientId" : 1200,
+      "diagnosis" : "heart",
+      "treatment" : "hearttest",
+      "dateoftreatment" : "8-6-2023",
+     "scanningBill" : "4000",
+     "doctorfee" : "500",
+     "medicines" : "4000"
+    },
+    {
+      "serialno" : 3,
+      "patientId" : 1122,
+      "diagnosis" : "legfracture",
+      "treatment" : "xray",
+      "dateoftreatment" : "4-6-2023",
+      "scanningBill" : 200,
+     "doctorfee" : 500,
+     "medicines" : 30000
+    },
+    {
+      "serialno" : 4,
+      "patientId" : 1432,
+      "diagnosis" : "anemia",
+      "treatment" : "bloodtest",
+      "dateoftreatment" : "22-6-2023",
+      "scanningBill" : "500",
+     "doctorfee" : 400,
+     "medicines" : 3000
+    },
+    {
+      "serialno" : 5,
+      "patientId" : 1234,
+      "diagnosis" : "back pain,eye Test",
+      "treatment" : "MRI",
+      "dateoftreatment" : "26-6-2023",
+      "scanningBill" : 1000,
+     "doctorfee" : 500,
+     "medicines" : 6000
+    }
+  ]

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class SortNames {
-	public void names(ArrayList<PatientP> patientList, ArrayList<TreatmentP> treatmentList) {
+	public void names(ArrayList<PatientPo> patientList, ArrayList<TreatmentPo> treatmentList) {
 		System.out.println("------------------------------------------------------------------|");
 		System.out.println("------------------------- PATIENTS DETAILS -----------------------|");
 		System.out.println("-------------------------------------------------------------------");
@@ -13,14 +13,14 @@ public class SortNames {
 		System.out.println("------------------------------------------------------------------|");
 
 		// Sort the patientList based on name using a custom comparator
-		Collections.sort(patientList, new Comparator<PatientP>() {
-			public int compare(PatientP p1, PatientP p2) {
+		Collections.sort(patientList, new Comparator<PatientPo>() {
+			public int compare(PatientPo p1, PatientPo p2) {
 				return p1.getName().compareToIgnoreCase(p2.getName());
 			}
 		});
 		// Iterate over each patient and treatment to display the sorted data
 		for (int i = 0; i < patientList.size(); i++) {
-			PatientP p = patientList.get(i);
+			PatientPo p = patientList.get(i);
 			System.out.printf("|%-15s|%15s|%-10s|%10s|%n", p.getName(), p.getAge(), p.getGender(), p.getId());
 
 			System.out.println("------------------------------------------------------------------|");

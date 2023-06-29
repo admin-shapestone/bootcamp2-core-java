@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TotalAmount {
-	public void displayToatalAmount(ArrayList<PatientP> patientList, ArrayList<TreatmentP> treatmentList) {
+	public void displayToatalAmount(ArrayList<PatientPo> patientList, ArrayList<TreatmentPo> treatmentList) {
 
 		System.out.println(
 				"-----------------------------------------------------------------------");
@@ -21,13 +21,9 @@ public class TotalAmount {
 		// Iterate over each patient and treatment to calculate and display the total
 		// amount
 		for (int i = 0; i < patientList.size(); i++) {
-			PatientP patient = patientList.get(i);
+			PatientPo patient = patientList.get(i);
 			int id = patient.getId();
-			int totalCostForPatient = getTotalCostForPatient(id,treatmentList);
-			
-//			TreatmentP treatment = treatmentList.get(i);
-//			int totalAmount = treatment.getScanningBill() + treatment.getMedicines() + treatment.getDoctorfee();
-			// prnting in the table format
+			double totalCostForPatient = getTotalCostForPatient(id,treatmentList);
 			System.out.printf("|%15s|%-15s|%-10s|%-10s|%15s|%n",
 					patient.getId(), patient.getName(), patient.getAge(), patient.getGender(),  totalCostForPatient);
 		}
@@ -35,14 +31,14 @@ public class TotalAmount {
 				"-------------------------------------------------------------------------");
 	}
 
-	private int getTotalCostForPatient(int id, ArrayList<TreatmentP> treatmentList) {
-		List<TreatmentP> treatmentsById = treatmentList.stream().filter(treatment -> treatment.getPatientId() == id).collect(Collectors.toList());
+	private int getTotalCostForPatient(int id, ArrayList<TreatmentPo> treatmentList) {
+		List<TreatmentPo> treatmentsById = treatmentList.stream().filter(treatment -> treatment.getPatientId() == id).collect(Collectors.toList());
 				
-		Integer medicinCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentP::getMedicines));
+		Integer medicinCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPo::getMedicines));
 
-		Integer doctorCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentP::getDoctorfee));
+		Integer doctorCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPo::getDoctorfee));
 
-		Integer scanningCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentP::getScanningBill));
+		Integer scanningCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPo::getScanningBill));
 		return medicinCost + doctorCost + scanningCost;
 	}
 }

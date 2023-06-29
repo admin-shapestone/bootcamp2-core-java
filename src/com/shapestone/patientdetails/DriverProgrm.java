@@ -25,14 +25,14 @@ public class DriverProgrm {
 		System.out.println("Enter option 3 to get the sort by names");
 		int option = sc.nextInt();
 
-		ObjectMapper objectMapper = new ObjectMapper(); 
-		 objectMapper.setDateFormat(new SimpleDateFormat("dd-MM-yyyy"));
+		ObjectMapper objectMapper = new ObjectMapper();
+		objectMapper.setDateFormat(new SimpleDateFormat("dd-MM-yyyy"));
 		// Read patient data from JSON file
 		ArrayList<PatientPo> patientList = objectMapper.readValue(
 				DriverProgrm.class.getResourceAsStream("/com/shapestone/patientdetails/patients.json"),
 				new TypeReference<ArrayList<PatientPo>>() {
 				});
-		
+
 		// Read treatment data from JSON file
 		ArrayList<TreatmentPo> treatmentList = objectMapper.readValue(
 				DriverProgrm.class.getResourceAsStream("/com/shapestone/patientdetails/treatments.json"),
@@ -53,5 +53,4 @@ public class DriverProgrm {
 			System.out.println("invalid option enter valid option");
 		}
 	}
-	}
-
+}

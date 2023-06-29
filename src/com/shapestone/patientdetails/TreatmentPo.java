@@ -1,6 +1,6 @@
 package com.shapestone.patientdetails;
 
-public class TreatmentP {
+public class TreatmentPo {
 	private int serialno;
 	private int patientId;
 	private String diagnosis;
@@ -9,7 +9,7 @@ public class TreatmentP {
 	private int scanningBill;
 	private int doctorfee;
 	private int medicines;
-
+	
 
 
 	@Override

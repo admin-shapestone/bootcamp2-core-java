@@ -7,7 +7,7 @@
     "distance": 197,
     "modeOfTransport": "Car",
     "pricePerKm": 22.2,
-    "totalTravelPrice":0
+    "dateOfJourney": "29-06-2023"
   },
 
   {
@@ -18,7 +18,7 @@
     "distance": 320,
     "modeOfTransport": "Car",
     "pricePerKm": 22.2,
-    "totalTravelPrice":0
+    "dateOfJourney": "30-06-2023"
   },
   {
     "slNo": 3,
@@ -28,7 +28,7 @@
     "distance": 272,
     "modeOfTransport": "Car",
     "pricePerKm": 22.2,
-    "totalTravelPrice":0
+    "dateOfJourney": "29-06-2023"
   },
   {
     "slNo": 4,
@@ -38,7 +38,7 @@
     "distance": 190,
     "modeOfTransport": "Car",
     "pricePerKm": 22.2,
-    "totalTravelPrice":0
+    "dateOfJourney": "29-06-2023"
   },
   {
     "slNo": 5,
@@ -48,7 +48,7 @@
     "distance": 179,
     "modeOfTransport": "Car",
     "pricePerKm": 22.2,
-    "totalTravelPrice":0
+    "dateOfJourney": "29-06-2023"
   },
   {
     "slNo": 6,
@@ -58,7 +58,7 @@
     "distance": 305,
     "modeOfTransport": "Car",
     "pricePerKm": 22.2,
-    "totalTravelPrice":0
+    "dateOfJourney": "29-06-2023"
   },
   {
     "slNo": 7,
@@ -68,6 +68,6 @@
     "distance": 197,
     "modeOfTransport": "Car",
     "pricePerKm": 22.2,
-    "totalTravelPrice":0
+    "dateOfJourney": "29-06-2023"
   }
 ]

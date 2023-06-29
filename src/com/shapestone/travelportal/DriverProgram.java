@@ -1,18 +1,15 @@
 package com.shapestone.travelportal;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class DriverProgram {
 	public static void main(String... args) throws StreamReadException, DatabindException, IOException {
@@ -33,37 +30,40 @@ public class DriverProgram {
 		int option = sc.nextInt();
 		// Create an ObjectMapper object to read JSON files
 		ObjectMapper om = new ObjectMapper();
+		om.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
 		om.setDateFormat(new SimpleDateFormat("dd-mm-yyyy"));
 		// Create ArrayLists to store booking and amount data
 		ArrayList<BookingDetails> bookingList = new ArrayList<>();
-		ArrayList<PassengerDetails> amountList = new ArrayList<>();
+		ArrayList<PassengerDetails> passengerList = new ArrayList<>();
 
 		// Read booking data from "travel.json" file and deserialize it into bookingList
 		bookingList = om.readValue(new java.io.File("travel.json"), new TypeReference<ArrayList<BookingDetails>>() {
 		});
 		// Read amount data from "passenger.json" file and deserialize it into
 		// amountLIst
-		amountList = om.readValue(new java.io.File("passenger.json"), new TypeReference<ArrayList<PassengerDetails>>() {
-		});
+		passengerList = om.readValue(new java.io.File("passenger.json"),
+				new TypeReference<ArrayList<PassengerDetails>>() {
+				});
 		TravelAmount tm = new TravelAmount();
 		// Option 1: Display total amount each passenger has to pay
 		if (option == 1) {
 
-			tm.calculateTotalPriceForEachPasenger(bookingList, amountList);
+			tm.calculateTotalPriceForEachPasenger(bookingList, passengerList);
 
 		}
 		// Option 2: Display passengers sorted by name
 		else if (option == 2) {
 			SortByName s = new SortByName();
-			s.printPassengerNamesInAssendingOrder(amountList);
+			s.printPassengerNamesInAssendingOrder(passengerList);
 			// Option 3: Display passengers scheduled for today and tomorrow
 		} else if (option == 3) {
 			TodayandTomorrow t = new TodayandTomorrow();
-			t.displayPassengerWhoIsTravellingTodayAndTomorrow(amountList);
+			t.displayPassengerWhoIsTravellingTodayAndTomorrow(passengerList, bookingList);
 		} else if (option == 4) {
-			tm.printTotalTravelsForAllPassenger(bookingList, amountList);
+			tm.printTotalTravelsForAllPassenger(bookingList, passengerList);
 		} else {
-			System.out.println("Invalid option selected ....");
+			System.out.println("Invalid option selected ....Please try again :)");
 		}
 	}
 }

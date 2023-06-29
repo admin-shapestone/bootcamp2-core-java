@@ -8,7 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class JoinedTodayYesterday {
-	public void todayYesterday(ArrayList<PatientPo> patientList) {
+	public void todayYesterday(ArrayList<PatientPojo> patientList) {
 		// accessing the patientList and treatmentList from the main class
 
 		Date date = new Date();
@@ -19,7 +19,7 @@ public class JoinedTodayYesterday {
 		System.out.println("-----------------------------------------------------------------------------------|");
 
 		for (int i = 0; i < patientList.size(); i++) {
-			PatientPo p = patientList.get(i);
+			PatientPojo p = patientList.get(i);
 
 			if (date.getDate() == p.getDateofadmission().getDate()
 					|| date.getDate() - 1 == p.getDateofadmission().getDate()) {

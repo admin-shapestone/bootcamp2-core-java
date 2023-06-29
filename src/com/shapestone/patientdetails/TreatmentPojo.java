@@ -1,6 +1,6 @@
 package com.shapestone.patientdetails;
 
-public class TreatmentPo {
+public class TreatmentPojo {
 	private int serialno;
 	private int patientId;
 	private String diagnosis;

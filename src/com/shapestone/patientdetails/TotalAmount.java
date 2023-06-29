@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TotalAmount {
-	public void displayToatalAmount(ArrayList<PatientPo> patientList, ArrayList<TreatmentPo> treatmentList) {
+	public void displayToatalAmount(ArrayList<PatientPojo> patientList, ArrayList<TreatmentPojo> treatmentList) {
 
 		System.out.println(
 				"-----------------------------------------------------------------------");
@@ -21,7 +21,7 @@ public class TotalAmount {
 		// Iterate over each patient and treatment to calculate and display the total
 		// amount
 		for (int i = 0; i < patientList.size(); i++) {
-			PatientPo patient = patientList.get(i);
+			PatientPojo patient = patientList.get(i);
 			int id = patient.getId();
 			double totalCostForPatient = getTotalCostForPatient(id,treatmentList);
 			System.out.printf("|%15s|%-15s|%-10s|%-10s|%15s|%n",
@@ -31,14 +31,14 @@ public class TotalAmount {
 				"-------------------------------------------------------------------------");
 	}
 
-	private int getTotalCostForPatient(int id, ArrayList<TreatmentPo> treatmentList) {
-		List<TreatmentPo> treatmentsById = treatmentList.stream().filter(treatment -> treatment.getPatientId() == id).collect(Collectors.toList());
+	private int getTotalCostForPatient(int id, ArrayList<TreatmentPojo> treatmentList) {
+		List<TreatmentPojo> treatmentsById = treatmentList.stream().filter(treatment -> treatment.getPatientId() == id).collect(Collectors.toList());
 				
-		Integer medicinCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPo::getMedicines));
+		Integer medicinCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPojo::getMedicines));
 
-		Integer doctorCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPo::getDoctorfee));
+		Integer doctorCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPojo::getDoctorfee));
 
-		Integer scanningCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPo::getScanningBill));
+		Integer scanningCost = treatmentsById.stream().collect(Collectors.summingInt(TreatmentPojo::getScanningBill));
 		return medicinCost + doctorCost + scanningCost;
 	}
 }

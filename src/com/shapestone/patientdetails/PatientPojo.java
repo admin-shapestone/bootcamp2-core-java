@@ -2,7 +2,7 @@ package com.shapestone.patientdetails;
 
 import java.util.Date;
 
-public class PatientPo {
+public class PatientPojo {
 	private String name;
 	private int id;
 	private int age;

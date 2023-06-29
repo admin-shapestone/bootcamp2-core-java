@@ -28,15 +28,15 @@ public class DriverProgrm {
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.setDateFormat(new SimpleDateFormat("dd-MM-yyyy"));
 		// Read patient data from JSON file
-		ArrayList<PatientPo> patientList = objectMapper.readValue(
+		ArrayList<PatientPojo> patientList = objectMapper.readValue(
 				DriverProgrm.class.getResourceAsStream("/com/shapestone/patientdetails/patients.json"),
-				new TypeReference<ArrayList<PatientPo>>() {
+				new TypeReference<ArrayList<PatientPojo>>() {
 				});
 
 		// Read treatment data from JSON file
-		ArrayList<TreatmentPo> treatmentList = objectMapper.readValue(
+		ArrayList<TreatmentPojo> treatmentList = objectMapper.readValue(
 				DriverProgrm.class.getResourceAsStream("/com/shapestone/patientdetails/treatments.json"),
-				new TypeReference<ArrayList<TreatmentPo>>() {
+				new TypeReference<ArrayList<TreatmentPojo>>() {
 				});
 
 		if (option == 1) {

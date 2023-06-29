@@ -44,8 +44,8 @@ public class DriverProgrm {
 			t.displayToatalAmount(patientList, treatmentList);
 
 		} else if (option == 2) {
-			JoinedTodayandYesterday ty = new JoinedTodayandYesterday();
-			ty.todayandYesterday(patientList);
+			JoinedTodayYesterday ty = new JoinedTodayYesterday();
+			ty.todayYesterday(patientList);
 		} else if (option == 3) {
 			SortNames s = new SortNames();
 			s.names(patientList, treatmentList);

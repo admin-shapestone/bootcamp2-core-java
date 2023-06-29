@@ -24,7 +24,7 @@ public class Main {
 
 		ObjectMapper objectMapper = new ObjectMapper();
 
-		objectMapper.setDateFormat(new SimpleDateFormat("yyyy-mm-dd"));
+		objectMapper.setDateFormat(new SimpleDateFormat("dd-mm-yyyy"));
 
 		ArrayList<Customers> customers = new ArrayList<>();
 		ArrayList<Purchases> purchases = new ArrayList<>();
@@ -36,7 +36,7 @@ public class Main {
 				});
 
 		if (option == 1) {
-			PurchasedLaptopsToday laptopsToday = new PurchasedLaptopsToday();
+			PurchasedTodayAndTomorrow laptopsToday = new PurchasedTodayAndTomorrow();
 			laptopsToday.purchasedLaptopsToday(customers, purchases);
 		} else if (option == 2) {
 			CustomersSortedByName sortedByName = new CustomersSortedByName();

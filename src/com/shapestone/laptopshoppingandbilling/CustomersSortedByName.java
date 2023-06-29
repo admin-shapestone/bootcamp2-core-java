@@ -14,8 +14,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class CustomersSortedByName {
 	public void customersSorted(ArrayList<Customers> customers, ArrayList<Purchases> purchases) {
 
-		System.out.println("------------------------------");
-		System.out.printf("| %-10s | %-13s |%n", "S.No", "Customer Name");
+		System.out.println("--------------------------------");
+		System.out.printf("| %-12s | %-13s |%n", "Customer ID", "Customer Name");
 		System.out.println("------------------------------");
 
 		Collections.sort(customers, new Comparator<Customers>() {
@@ -25,8 +25,8 @@ public class CustomersSortedByName {
 		});
 
 		for (int i = 0; i < customers.size(); i++) {
-			System.out.printf("| %-10s | %-13s |%n", customers.get(i).getsNo(), customers.get(i).getName());
-			System.out.println("------------------------------");
+			System.out.printf("| %-12s | %-13s |%n", customers.get(i).getCustomerId(), customers.get(i).getName());
+			System.out.println("--------------------------------");
 
 		}
 	}

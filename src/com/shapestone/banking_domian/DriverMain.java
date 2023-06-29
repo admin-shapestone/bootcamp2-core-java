@@ -48,24 +48,24 @@ public class DriverMain {
 		int choice = sc.nextInt();
 		if (choice == 1) {
 
-			acount.BankHolderDetails(driver1);
+			acount.bankHolderDetails(driver1);
 
 		}
 
 		else if (choice == 2) {
-			acount.TotalOpeningBalance(driver1);
+			acount.totalOpeningBalance(driver1);
 
 		} else if (choice == 3) {
-			paymentsDetails.SumOfAllDebits(payments);
+			paymentsDetails.sumOfAllDebits(payments);
 
 		}
 
 		else if (choice == 4) {
 
-			acount.TotalAvaiableBalanceInBank(driver1, payments);
+			acount.totalAvaiableBalanceInBank(driver1, payments);
 
 		} else if (choice == 5) {
-			acount.TodayOpeningAccounts(driver1);
+			acount.todayOpeningAccounts(driver1);
 
 		}
 
@@ -76,15 +76,7 @@ public class DriverMain {
 				list.add(driver1.get(i));
 
 			}
-			System.out.println("----------------------------------------------------------------------");
-			System.out.printf("|   %-25s |   %-20s |   %-10s |\n", "Account Holder Name", "Account Id", "Age");
-			System.out.println("----------------------------------------------------------------------");
-			Collections.sort(list, new BankAccountDetailsNameComparator());
-			for (Accounts account : list) {
-				System.out.printf("|   %-25s |   %-20s |   %-10s |\n", account.getName(), account.getAccountId(),
-						account.getAge());
-				System.out.println("----------------------------------------------------------------------");
-			}
+			acount.namesInAsscendingOrder(list);
 
 		}
 

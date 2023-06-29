@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class PaymentsData {
 	double sumOfAllDebits = 0;
 
-	public void SumOfAllDebits(ArrayList<Payments> payments) {
+	public void sumOfAllDebits(ArrayList<Payments> payments) {
 
 		for (int j = 0; j < payments.size(); j++) {
 			sumOfAllDebits = sumOfAllDebits + payments.get(j).getAmountPaid();

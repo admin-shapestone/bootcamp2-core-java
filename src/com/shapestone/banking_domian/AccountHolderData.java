@@ -7,7 +7,7 @@ public class AccountHolderData {
 	double sumOfAllDebits = 0;
 	Date date = new Date();
 
-	public void BankHolderDetails(ArrayList<Accounts> driver1) {
+	public void bankHolderDetails(ArrayList<Accounts> driver1) {
 		System.out.println(
 				"---------------------------------------------------------------------------------------------------------------------------");
 		System.out.printf("| %-15s | %-15s | %-15s|  %-15s |  %-30s | %-15s|%n", "Account Id", "Name", "Age", "Gender",
@@ -27,7 +27,7 @@ public class AccountHolderData {
 
 	}
 
-	public void TotalOpeningBalance(ArrayList<Accounts> driver1) {
+	public void totalOpeningBalance(ArrayList<Accounts> driver1) {
 		System.out.println(
 				"-----------------------------------------------------------------------------------------------------------");
 		for (int i = 0; i < driver1.size(); i++) {
@@ -40,7 +40,7 @@ public class AccountHolderData {
 
 	}
 
-	public void TotalAvaiableBalanceInBank(ArrayList<Accounts> driver1, ArrayList<Payments> payments) {
+	public void totalAvaiableBalanceInBank(ArrayList<Accounts> driver1, ArrayList<Payments> payments) {
 		for (int i = 0; i < driver1.size(); i++) {
 			totalBalance = totalBalance + driver1.get(i).getOpeningBalance();
 
@@ -60,7 +60,7 @@ public class AccountHolderData {
 	}
 
 	@SuppressWarnings("unlikely-arg-type")
-	public void TodayOpeningAccounts(ArrayList<Accounts> driver1) {
+	public void todayOpeningAccounts(ArrayList<Accounts> driver1) {
 
 		System.out.println("-----------------------------------------------------------------------------------------");
 
@@ -76,6 +76,19 @@ public class AccountHolderData {
 						"------------------------------------------------------------------------------------------");
 			}
 
+		}
+	}
+	
+	public void namesInAsscendingOrder(List<Accounts> list) 
+	{
+		System.out.println("----------------------------------------------------------------------");
+		System.out.printf("|   %-25s |   %-20s |   %-10s |\n", "Account Holder Name", "Account Id", "Age");
+		System.out.println("----------------------------------------------------------------------");
+		Collections.sort(list, new BankAccountDetailsNameComparator());
+		for (Accounts account : list) {
+			System.out.printf("|   %-25s |   %-20s |   %-10s |\n", account.getName(), account.getAccountId(),
+					account.getAge());
+			System.out.println("----------------------------------------------------------------------");
 		}
 	}
 

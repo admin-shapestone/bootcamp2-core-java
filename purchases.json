@@ -1,0 +1,47 @@
+[
+  {
+    "sNo": 1,
+    "customerId": 111,
+    "purchaseId": 123,
+    "quantity": 1,
+    "product": "Laptop Model A",
+    "price": 15000,
+    "dateOfPurchase": "27-06-2023"
+  },
+  {
+    "sNo": 2,
+    "customerId": 222,
+    "purchaseId": 234,
+    "product": "Laptop Model B",
+    "quantity": 1,
+    "price": 20000,
+     "dateOfPurchase": "18-06-2023"
+  },
+  { 
+    "sNo": 3,
+    "customerId": 333,
+    "purchaseId": 345,
+    "product": "Laptop Model A",
+    "quantity": 1,
+    "price": 15000,
+    "dateOfPurchase": "29-06-2023"
+  },
+  {
+    "sNo": 4,
+    "customerId": 444,
+    "purchaseId": 456,
+    "product": "Laptop Model C",
+    "quantity": 1,
+    "price": 25000,
+    "dateOfPurchase": "30-06-2023"
+  },
+   {
+    "sNo": 5,
+    "customerId": 111,
+    "purchaseId": 567,
+    "product": "Laptop Model c",
+    "quantity": 1,
+    "price": 25000,
+    "dateOfPurchase": "27-06-2023"
+  }
+]

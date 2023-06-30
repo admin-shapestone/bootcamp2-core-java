@@ -22,11 +22,5 @@
    "name":"Akshay",
    "age": 23,
    "gender": "Male"
-   },
-    {
-   "customerId": 111,
-   "name":"Phani ram",
-   "age": 25,
-   "gender": "Male"
    }
   ]

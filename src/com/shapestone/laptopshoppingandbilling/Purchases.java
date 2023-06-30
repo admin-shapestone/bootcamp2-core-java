@@ -7,6 +7,8 @@ public class Purchases {
 	private int customerId;
 	private int purchaseId;
 	private String product;
+	private double price;
+	private Date dateOfPurchase;
 	private int quantity;
 
 	public int getsNo() {
@@ -25,8 +27,7 @@ public class Purchases {
 		this.quantity = quantity;
 	}
 
-	private int price;
-	private Date dateOfPurchase;
+	
 
 	public int getCustomerId() {
 		return customerId;
@@ -52,7 +53,7 @@ public class Purchases {
 		this.product = product;
 	}
 
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
 

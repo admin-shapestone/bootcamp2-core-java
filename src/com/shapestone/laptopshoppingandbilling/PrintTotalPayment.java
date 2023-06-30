@@ -2,6 +2,9 @@ package com.shapestone.laptopshoppingandbilling;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 import com.fasterxml.jackson.core.exc.StreamReadException;
@@ -34,5 +37,30 @@ public class PrintTotalPayment {
 		}
 
 		System.out.println("Total Amount of Purchases: " + totalAmount);
+	}
+
+	public void customerTotalPurchases(ArrayList<Customers> customers, ArrayList<Purchases> purchases) {
+		System.out.println("----------------------------------------------------------------------");
+		System.out.printf("| %-15s | %-15s | %-30s |%n", "Customer ID", "Customer Name", "Total purchases Of Customer");
+		System.out.println("----------------------------------------------------------------------");
+		HashMap<Integer, Double> customerTotals = new HashMap<Integer, Double>();
+		for (int j = 0; j < customers.size(); j++) {
+			int cuid = customers.get(j).getCustomerId();
+			for (int i = 0; i < purchases.size(); i++) {
+				Double itemPrice = purchases.get(i).getPrice();
+				if (cuid == purchases.get(i).getCustomerId()) {
+					if (customerTotals.get(cuid) == null) {
+						customerTotals.put(cuid, itemPrice);
+					} else {
+
+						customerTotals.put(cuid, (itemPrice + customerTotals.get(cuid)));
+					}
+				}
+			}
+			System.out.printf("| %-15s | %-15s | %-30s |%n", customers.get(j).getCustomerId(),
+					customers.get(j).getName(), customerTotals.get(customers.get(j).getCustomerId()));
+			System.out.println("----------------------------------------------------------------------");
+		}
+
 	}
 }

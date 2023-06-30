@@ -1,0 +1,34 @@
+[
+  {
+    "slno": 1,
+    "emailId": "gopikrishnaa12@gmail.com",
+    "dateOfReleving": "2018-05-15",
+    "amountReceived": 23000,
+    "companyName": "LNT Corporation",
+    "ctcTimeOfReleving": 297950
+  },
+  {
+    "slno": 2,
+    "emailId": "nitishrayapati@gmail.com",
+    "dateOfReleving": "2023-05-20",
+    "amountReceived": 18000,
+    "companyName": "Tata Corporation",
+    "ctcTimeOfReleving": 295900
+  },
+  {
+    "slno": 3,
+    "emailId": "nagesh@gmail.com",
+    "dateOfReleving": "2014-02-05",
+    "amountReceived": 20000,
+    "companyName": "Textile Industries",
+    "ctcTimeOfReleving": 292800
+  },
+  {
+    "slno": 4,
+    "emailId": "phanisrirama@gmail.com",
+    "dateOfReleving": "2020-12-15",
+    "amountReceived": 22000,
+    "companyName": "Avalon Solutions",
+    "ctcTimeOfReleving": 293900
+  }
+]

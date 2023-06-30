@@ -1,0 +1,39 @@
+
+[
+    {
+      "id": 1,
+      "name": "Gopi krishna",
+      "age": 25,
+      "gender": "male",
+      "address": "hyderabad",
+      "phoneNumber": 6281494760,
+      "dateOfJoining": "23-06-2023"
+    },
+    {
+      "id": 2,
+      "name": "Nitish",
+      "age": 23,
+      "gender": "male",
+      "address": "nandigama",
+      "phoneNumber": 9381712215,
+      "dateOfJoining": "21-06-2023"
+    },
+    {
+      "id": 3,
+      "name": "Nagesh",
+      "age": 27,
+      "gender": "male",
+      "address": "vijayawada",
+      "phoneNumber": 9999999999,
+      "dateOfJoining": "25-06-2023"
+    },
+    {
+      "id": 4,
+      "name": "phani",
+      "age": 23,
+      "gender": "male",
+      "address": "machilipatnam",
+      "phoneNumber": 9666256616,
+      "dateOfJoining": "30-06-2023"
+    }
+  ]

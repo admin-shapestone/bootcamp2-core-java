@@ -1,37 +1,73 @@
 [
   {
     "slno": 1,
-    "studentId": "101",
+    "studentId": 101,
     "certification": "java",
-    "fees": 45000,
+    "fee": 45000,
+    "dateOfCertificationDone": "24-06-2023"
+  },
+  {
+    "slno": 1,
+    "studentId": 101,
+    "certification": "spokenEnglish",
+    "fee": 10000,
     "dateOfCertificationDone": "24-06-2023"
   },
   {
     "slno": 2,
-    "studentId": "102",
+    "studentId": 102, 
     "certification": "python",
-    "fees": 30000,
-    "dateOfCertificationDone": "06-18-2023"
+    "fee": 30000,
+    "dateOfCertificationDone": "29-06-2023"
+  },
+  {
+    "slno": 2,
+    "studentId": 102, 
+    "certification": "java",
+    "fee": 40000,
+    "dateOfCertificationDone": "06-10-2023"
   },
   {
     "slno": 3,
-    "studentId": "103",
+    "studentId": 103,
     "certification": "cloud",
-    "fees": 35000,
+    "fee": 35000,
+    "dateOfCertificationDone": "05-07-2023"
+  },
+  {
+    "slno": 3,
+    "studentId": 103,
+    "certification": "spokenEnglish",
+    "fee": 10000,
     "dateOfCertificationDone": "05-01-2023"
   },
   {
     "slno": 4,
-    "studentId": "104",
+    "studentId": 104,
     "certification": "dataScience",
-    "fees": 50000,
+    "fee": 50000,
+    "dateOfCertificationDone": "06-21-2023"
+  },
+  {
+    "slno": 4,
+    "studentId": 104,
+    "certification": "python",
+    "fee": 30000,
     "dateOfCertificationDone": "06-21-2023"
   },
   {
     "slno": 5,
-    "studentId": "105",
+    "studentId": 105,
     "certification": "javaScript",
-    "fees": 25000,
+    "fee": 25000,
+    "dateOfCertificationDone": "01-21-2023"
+ 
+  },
+  {
+    "slno": 5,
+    "studentId": 105,
+    "certification": "testingTools",
+    "fee": 35000,
     "dateOfCertificationDone": "01-21-2023"
  
   }

@@ -1,6 +1,7 @@
 package com.shapestone.studentmanagement;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -15,13 +16,14 @@ import com.fasterxml.jackson.core.type.TypeReference;
 public class StudentManagement {
 
 	public static void main(String[] args) throws StreamReadException, DatabindException, IOException {
-		String certificatedonebytoday = "24-06-2023";
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("choose 1 for sort the names");
 		System.out.println("choose 2 for total amount for certification for students");
 		System.out.println("choose 3 for certificate done by today");
 		int choose = sc.nextInt();
 		ObjectMapper om = new ObjectMapper();
+		om.setDateFormat(new SimpleDateFormat("dd-MM-yyyy"));
 		ArrayList<Student> studentList = om.readValue(
 				new java.io.File("C:\\Users\\nages\\eclipse-workspace\\bootcamp2-core-java\\src\\student.json"),
 				new TypeReference<ArrayList<Student>>() {
@@ -32,54 +34,18 @@ public class StudentManagement {
 				});
 
 		if (choose == 1) {
-			NamesSorting ns = new NamesSorting();
-			ns.Sort(studentList);
+			NamesSorting sort = new NamesSorting();
+			sort.Sort(studentList);
 		} else if (choose == 2) {
+
 			AmountForCertification ac = new AmountForCertification();
-			ac.Certificates(certificatesList);
-			System.out.println(
-					"---------------------------------------------------------------------------------------------------------|");
-			System.out.printf("|%-15s |%-15s |%-15s |%-15s |%-15s|%n", "Slno", "StudentID", "Fees", "Certification",
-					"DateOfJoining");
-
-			System.out.println("------------------------------------------------------------------------------------|");
-
-			for (int j = 0; j < studentList.size(); j++) {
-				Student s = studentList.get(j);
-				System.out.printf(" |%-15s | %-15s | %-15s | %-15s | %-15s | %-15s|%n", s.getStudentId(),
-						s.getStudentName(), s.getStudentGender(), s.getStudentAge(), s.getStudentDateOfJoining(),
-						s.getStudentAddress());
-				System.out.println(
-						"------------------------------------------------------------------------------------------------------|");
-
-			}
-
-			for (int i = 0; i < certificatesList.size(); i++) {
-				Certificates c = certificatesList.get(i);
-				System.out.printf("|%-15s |%-15s |%-15s |%-15s |%-15s|%n ", c.getSlno(), c.getStudentId(), c.getFees(),
-						c.getCertification(), c.getDateOfCertificationDone());
-				System.out.println(
-						"-----------------------------------------------------------------------------------|");
-
-			}
+			ac.Certificates(certificatesList, studentList);
 
 		} else if (choose == 3) {
-			CertificateDoneByToday cd = new CertificateDoneByToday();
-			cd.Certificates(certificatesList);
-			for (int j = 0; j < certificatesList.size(); j++) {
-				Certificates c1 = certificatesList.get(j);
-				if (certificatedonebytoday.equals(c1.getDateOfCertificationDone()))
-
-				{
-					System.out.printf("|%-15s |%-15s |%-15s |%-15s |%-15s|%n ", c1.getSlno(), c1.getStudentId(),
-							c1.getFees(), c1.getCertification(), c1.getDateOfCertificationDone());
-					System.out.println(
-							"-----------------------------------------------------------------------------------|");
-
-				}
-			}
+			CertificateDoneByToday today = new CertificateDoneByToday();
+			today.Certificates(certificatesList);
 		} else {
-			System.out.println("invalid option choose valid option");
+			System.out.println("invaid number please enter correct number");
 		}
 
 	}

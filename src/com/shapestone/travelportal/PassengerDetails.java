@@ -9,8 +9,6 @@ public class PassengerDetails {
 	private String passengerName;
 	private int age;
 	private String gender;
-	private Date dateOfJourney;
-	private double passengersAmount;
 
 	public float getTotalAmount() {
 		return totalAmount;
@@ -22,13 +20,7 @@ public class PassengerDetails {
 
 	private float totalAmount;
 
-	public double getPassengersAmount() {
-		return passengersAmount;
-	}
-
-	public void setPassengersAmount(double passengersAmount) {
-		this.passengersAmount = passengersAmount;
-	}
+	
 
 	public String getPassengerName() {
 		return passengerName;
@@ -62,13 +54,7 @@ public class PassengerDetails {
 		this.gender = gender;
 	}
 
-	public Date getDateOfJourney() {
-		return dateOfJourney;
-	}
-
-	public void setDateOfJourney(Date dateOfJourney) {
-		this.dateOfJourney = dateOfJourney;
-	}
+	
 
 	public void setTotalPrice(float price) {
 		this.totalAmount = price;
@@ -81,7 +67,7 @@ public class PassengerDetails {
 	@Override
 	public String toString() {
 		return "totalAmount [passengerId=" + passengerId + ", passangersName=" + passengerName + ", age=" + age
-				+ ", gender=" + gender + ", dateOfJourney=" + dateOfJourney + ", totalAmount=" + totalAmount + "]";
+				+ ", gender=" + gender + ", totalAmount=" + totalAmount + "]";
 	}
 
 }

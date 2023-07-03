@@ -6,5 +6,8 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/nages/Downloads/jackson-annotations-2.15.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nages/Downloads/jackson-core-2.15.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nages/Downloads/jackson-databind-2.15.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

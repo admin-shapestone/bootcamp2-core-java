@@ -1,0 +1,50 @@
+[
+  {
+    "studentId": 101,
+    "studentName": "SriRam",
+    "studentAge": 25,
+    "studentGender": "Male",
+    "studentDateOfJoining": "01-04-2023",
+    "studentAddress": "Vijayawada"
+  },
+  {
+    "studentId": 102,
+    "studentName": "Venkatesh",
+    "studentAge": 27,
+    "studentGender": "Male",
+    "studentDateOfJoining": "01-04-2023",
+    "studentAddress": "Madhira"
+  },
+  {
+    "studentId": 103,
+    "studentName": "Vamsi",
+    "studentAge": 28,
+    "studentGender": "Male",
+    "studentDateOfJoining": "01-05-2023",
+    "studentAddress": "Ananthapur"
+  },
+  {
+    "studentId": 104,
+    "studentName": "Naresh",
+    "studentAge": 28,
+    "studentGender": "Male",
+    "studentDateOfJoining": "05-04-2023",
+    "studentAddress": "VijayaWada"
+  },
+  {
+    "studentId": 105,
+    "studentName": "Anjaneyulu",
+    "studentAge": 29,
+    "studentGender": "Male",
+    "studentDateOfJoining": "01-06-2023",
+    "studentAddress": "BhavaniPuram"
+  },
+  {
+    "studentId": 106,
+    "studentName": "Deepika",
+    "studentAge": 19,
+    "studentGender": "Female",
+    "studentDateOfJoining": "01-04-2023",
+    "studentAddress": "BalajiNagar"
+  }
+]

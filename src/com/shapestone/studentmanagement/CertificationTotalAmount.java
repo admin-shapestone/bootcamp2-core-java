@@ -5,11 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class AmountForCertification {
+public class CertificationTotalAmount {
 	public void Certificates(ArrayList<Certificates> certificatesList, ArrayList<Student> studentList) {
 
-		System.out.println(
-				"----------------------------------------------------|");
+		System.out.println("----------------------------------------------------|");
 		System.out.printf("|%-15s |%-15s |%-15s  | %n", "Slno", "StudentID", "Fees");
 
 		System.out.println("----------------------------------------------------|");
@@ -27,10 +26,10 @@ public class AmountForCertification {
 
 			// System.out.println(totalAmountForCertification);
 
-			System.out.printf("|%-15s |%-15s |%-15s  |%n ",  c.getSlno(),  c.getStudentId(),  totalAmountForCertification );
-        System.out.println("---------------------------------------------------|");
+			System.out.printf("|%-15s |%-15s |%-15s  |%n ", c.getSlno(), c.getStudentId(), totalAmountForCertification);
+			System.out.println("---------------------------------------------------|");
 		}
-		
+
 	}
 
 	private double getTotalAmountForCertification(int id, ArrayList<Certificates> certificatesList) {

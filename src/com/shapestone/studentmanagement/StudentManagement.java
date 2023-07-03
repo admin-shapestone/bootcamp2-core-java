@@ -34,15 +34,16 @@ public class StudentManagement {
 				});
 
 		if (choose == 1) {
-			NamesSorting sort = new NamesSorting();
+			SortingByName sort = new SortingByName();
+
 			sort.Sort(studentList);
 		} else if (choose == 2) {
 
-			AmountForCertification ac = new AmountForCertification();
+			CertificationTotalAmount ac = new CertificationTotalAmount();
 			ac.Certificates(certificatesList, studentList);
 
 		} else if (choose == 3) {
-			CertificateDoneByToday today = new CertificateDoneByToday();
+			CertificationToday today = new CertificationToday();
 			today.Certificates(certificatesList);
 		} else {
 			System.out.println("invaid number please enter correct number");

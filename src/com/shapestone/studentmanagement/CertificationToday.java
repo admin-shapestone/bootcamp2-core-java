@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 
-public class CertificateDoneByToday {
+public class CertificationToday {
 	public void Certificates(ArrayList<Certificates> certificatesList) {
 		Date date = new Date();
 
